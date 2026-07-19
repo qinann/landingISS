@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { products } from '../data/products'
-import Logo from './Logo'
+import logoFull from '../assets/logo.png'
 
 const navLinks = [
   { to: '/', label: 'Beranda' },
@@ -28,11 +28,8 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3.5 sm:px-6">
-        <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <Logo className="h-9 w-9" />
-          <span className="text-[15px] font-bold uppercase tracking-wide text-navy-800">
-            Inti Smart <span className="text-brand-600">Solutions</span>
-          </span>
+        <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
+          <img src={logoFull} alt="Inti Smart Solutions" className="h-11 w-auto object-contain" />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -72,12 +69,14 @@ export default function Navbar() {
               {link.label}
             </NavLink>
           ))}
-          <Link
-            to="/contact"
+          <a
+            href="https://wa.me/6285294584791"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-md bg-navy-800 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-navy-900"
           >
             Hubungi Kami
-          </Link>
+          </a>
         </nav>
 
         <button

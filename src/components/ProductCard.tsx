@@ -9,6 +9,9 @@ export default function ProductCard({ product }: { product: Product }) {
       to={`/produk/${product.slug}`}
       className="group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-transparent hover:shadow-xl hover:shadow-navy-900/10"
     >
+      {product.logo && (
+        <img src={product.logo} alt={product.name} className="mb-4 h-12 w-auto object-contain" />
+      )}
       <span
         className={`w-fit border-l-2 pl-2.5 text-[11px] font-semibold uppercase tracking-wider ${
           isAccent ? 'border-accent-500 text-accent-700' : 'border-brand-500 text-brand-700'

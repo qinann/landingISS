@@ -108,9 +108,14 @@ export default function Contact() {
         <div className="space-y-6 lg:col-span-2">
           <div className="rounded-xl border border-slate-200 bg-white p-6">
             <h3 className="font-semibold text-navy-900">Kantor Pusat</h3>
-            <p className="mt-2 text-sm leading-relaxed text-slate-600">
-              Jl. Sudirman No. 1, Jakarta Selatan, Indonesia
-            </p>
+            <a
+              href="https://share.google/26Dl4AS6hJHTDSB4s"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 block text-sm leading-relaxed text-brand-700 hover:underline"
+            >
+              Jl. Cikutra Baru Raya No. 1, Neglasari, Kec. Cibeunying Kaler, Kota Bandung, Jawa Barat 40123
+            </a>
           </div>
           <div className="rounded-xl border border-slate-200 bg-white p-6">
             <h3 className="font-semibold text-navy-900">Email</h3>
@@ -118,7 +123,14 @@ export default function Contact() {
           </div>
           <div className="rounded-xl border border-slate-200 bg-white p-6">
             <h3 className="font-semibold text-navy-900">Telepon</h3>
-            <p className="mt-2 text-sm text-slate-600">+62 21 0000 0000</p>
+            <a
+              href="https://wa.me/6285294584791"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 block text-sm text-brand-700 hover:underline"
+            >
+              085294584791
+            </a>
           </div>
           <div className="rounded-xl border border-slate-200 bg-white p-6">
             <h3 className="font-semibold text-navy-900">Jam Operasional</h3>

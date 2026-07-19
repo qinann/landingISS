@@ -52,14 +52,32 @@ export default function Footer() {
           <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-400">Kontak</h3>
           <ul className="mt-5 space-y-3 text-sm text-slate-300">
             <li>halo@intismartsolutions.com</li>
-            <li>+62 21 0000 0000</li>
-            <li>Jakarta, Indonesia</li>
+            <li>
+              <a href="https://wa.me/6285294584791" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                085294584791
+              </a>
+            </li>
+            <li>
+              <a href="https://share.google/26Dl4AS6hJHTDSB4s" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                Kota Bandung, Jawa Barat
+              </a>
+            </li>
           </ul>
         </div>
       </div>
 
-      <div className="border-t border-white/5 py-6 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} Inti Smart Solutions. Semua hak dilindungi.
+      <div className="border-t border-white/5 py-6">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 text-xs text-slate-500 sm:flex-row sm:px-6">
+          <span>© {new Date().getFullYear()} Inti Smart Solutions. Semua hak dilindungi.</span>
+          <div className="flex items-center gap-5">
+            <Link to="/kebijakan-privasi" className="hover:text-slate-300">
+              Kebijakan Privasi
+            </Link>
+            <Link to="/syarat-ketentuan" className="hover:text-slate-300">
+              Syarat & Ketentuan
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   )

@@ -3,6 +3,7 @@ import { getProductBySlug, products } from '../data/products'
 import CTASection from '../components/CTASection'
 import ProductCard from '../components/ProductCard'
 import DashboardMockup from '../components/DashboardMockup'
+import ProductVideo from '../components/ProductVideo'
 import Reveal from '../components/Reveal'
 
 export default function ProductDetail() {
@@ -26,6 +27,11 @@ export default function ProductDetail() {
         </div>
         <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:py-20">
           <div>
+            {product.logo && (
+              <div className="mb-5 inline-block rounded-xl bg-white p-3 shadow-lg">
+                <img src={product.logo} alt={product.name} className="h-14 w-auto object-contain" />
+              </div>
+            )}
             <span
               className={`inline-block border-l-2 pl-2.5 text-[11px] font-semibold uppercase tracking-wider ${
                 isAccent ? 'border-accent-400 text-accent-300' : 'border-gold-400 text-gold-300'
@@ -52,7 +58,11 @@ export default function ProductDetail() {
             </div>
           </div>
 
-          <DashboardMockup accent={product.color as 'brand' | 'accent'} label={product.name} />
+          {product.video ? (
+            <ProductVideo src={product.video} label={product.name} />
+          ) : (
+            <DashboardMockup accent={product.color as 'brand' | 'accent'} label={product.name} />
+          )}
         </div>
       </section>
 

@@ -1,9 +1,16 @@
+import edesaLogo from '../assets/edesa-logo.png'
+import edesaVideo from '../assets/edesa-video.mp4'
+import zxLogo from '../assets/zx-logo-crop.png'
+import zxVideo from '../assets/zx-video.mp4'
+
 export type Product = {
   slug: string
   name: string
   tagline: string
   category: string
   color: string
+  logo?: string
+  video?: string
   summary: string
   description: string[]
   features: { title: string; desc: string }[]
@@ -18,6 +25,8 @@ export const products: Product[] = [
     tagline: 'Digitalisasi Administrasi & Pelayanan Desa',
     category: 'Pemerintahan Desa',
     color: 'brand',
+    logo: edesaLogo,
+    video: edesaVideo,
     summary:
       'Platform digital terpadu untuk membantu pemerintah desa mengelola administrasi kependudukan, keuangan, dan pelayanan publik secara transparan dan efisien.',
     description: [
@@ -44,6 +53,8 @@ export const products: Product[] = [
     tagline: 'Platform Digital Pengelolaan Zakat, Infaq & Sedekah',
     category: 'Zakat & Filantropi Digital',
     color: 'brand',
+    logo: zxLogo,
+    video: zxVideo,
     summary:
       'ZX membantu lembaga amil zakat, masjid, dan yayasan mengelola penghimpunan dan penyaluran zakat, infaq, serta sedekah secara digital, transparan, dan akuntabel.',
     description: [

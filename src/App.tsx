@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import ProductDetail from './pages/ProductDetail'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsConditions from './pages/TermsConditions'
 import NotFound from './pages/NotFound'
 
 function ScrollToTop() {
@@ -25,6 +27,8 @@ function App() {
           <Route path="/produk/:slug" element={<ProductDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/kebijakan-privasi" element={<PrivacyPolicy />} />
+          <Route path="/syarat-ketentuan" element={<TermsConditions />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
