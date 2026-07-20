@@ -2,6 +2,8 @@ import edesaLogo from '../assets/edesa-logo.png'
 import edesaVideo from '../assets/edesa-video.mp4'
 import zxLogo from '../assets/zx-logo-crop.png'
 import zxVideo from '../assets/zx-video.mp4'
+import sdsTdsLogo from '../assets/sds-tds-logo-crop.png'
+import akudanaLogo from '../assets/akudana-logo.png'
 
 export type Product = {
   slug: string
@@ -107,6 +109,7 @@ export const products: Product[] = [
     tagline: 'Digitalisasi Administrasi & Akademik Sekolah',
     category: 'Digitalisasi Sekolah',
     color: 'brand',
+    logo: sdsTdsLogo,
     summary:
       'Platform digital yang membantu sekolah mengelola data siswa, akademik, keuangan, dan komunikasi dengan orang tua dalam satu sistem yang terintegrasi.',
     description: [
@@ -133,6 +136,7 @@ export const products: Product[] = [
     tagline: 'Solusi Pinjaman Karyawan Terintegrasi',
     category: 'Employee Loan',
     color: 'accent',
+    logo: akudanaLogo,
     summary:
       'AKUDANA memudahkan perusahaan menyediakan fasilitas pinjaman karyawan yang transparan, dengan proses pengajuan dan pemotongan gaji yang sepenuhnya otomatis.',
     description: [
