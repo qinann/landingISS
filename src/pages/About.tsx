@@ -9,7 +9,7 @@ const values = [
 ]
 
 const timeline = [
-  { year: '2019', text: 'Inti Smart Solutions didirikan dengan fokus pada solusi digital untuk sektor pemerintahan desa.' },
+  { year: '2019', text: 'Inti Smart Solution didirikan dengan fokus pada solusi digital untuk sektor pemerintahan desa.' },
   { year: '2021', text: 'Meluncurkan POS dan memperluas fokus ke sektor retail dan F&B.' },
   { year: '2023', text: 'Menghadirkan ZX untuk mendukung digitalisasi pengelolaan zakat, infaq, dan sedekah.' },
   { year: '2025', text: 'Meluncurkan SDS & TDS untuk digitalisasi sekolah serta AKUDANA untuk kesejahteraan karyawan.' },
@@ -26,7 +26,7 @@ export default function About() {
             Membangun Teknologi yang Berdampak Nyata
           </h1>
           <p className="mt-5 text-lg leading-relaxed text-navy-200">
-            Inti Smart Solutions adalah perusahaan teknologi yang berfokus pada
+            Inti Smart Solution adalah perusahaan teknologi yang berfokus pada
             pengembangan platform digital untuk pemerintahan desa, lembaga filantropi,
             sekolah, retail, dan kesejahteraan karyawan. Kami percaya teknologi yang
             baik harus sederhana digunakan, namun kuat dalam menyelesaikan masalah nyata.

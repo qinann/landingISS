@@ -1,4 +1,4 @@
-export default function ProductVideo({ src, label = 'Inti Smart Solutions' }: { src: string; label?: string }) {
+export default function ProductVideo({ src, label = 'Inti Smart Solution' }: { src: string; label?: string }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-white/10 bg-navy-800 shadow-2xl shadow-navy-950/40">
       <div className="flex items-center gap-2 border-b border-white/10 bg-navy-900/60 px-4 py-3">

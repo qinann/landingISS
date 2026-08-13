@@ -29,7 +29,7 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3.5 sm:px-6">
         <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
-          <img src={logoFull} alt="Inti Smart Solutions" className="h-11 w-auto object-contain" />
+          <img src={logoFull} alt="Inti Smart Solution" className="h-11 w-auto object-contain" />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

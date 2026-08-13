@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function CTASection({
   title = 'Siap mendigitalkan operasional Anda?',
-  subtitle = 'Konsultasikan kebutuhan Anda dengan tim kami dan temukan solusi Inti Smart Solutions yang tepat.',
+  subtitle = 'Konsultasikan kebutuhan Anda dengan tim kami dan temukan solusi Inti Smart Solution yang tepat.',
 }: {
   title?: string
   subtitle?: string

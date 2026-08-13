@@ -2,7 +2,7 @@ const bars = [45, 75, 58, 92, 64, 84, 70]
 
 export default function DashboardMockup({
   accent = 'brand',
-  label = 'Inti Smart Solutions',
+  label = 'Inti Smart Solution',
 }: {
   accent?: 'brand' | 'accent'
   label?: string

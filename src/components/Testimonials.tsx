@@ -28,7 +28,7 @@ export default function Testimonials() {
           <h2 className="mt-4 text-3xl font-bold text-white">Dipercaya Mitra Kami</h2>
           <p className="mt-3 text-navy-200">
             Sebagian pengalaman dari instansi dan organisasi yang telah menggunakan
-            produk Inti Smart Solutions.
+            produk Inti Smart Solution.
           </p>
         </div>
 

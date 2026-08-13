@@ -157,6 +157,32 @@ export const products: Product[] = [
     ],
     audience: ['Divisi HR & Finance', 'Perusahaan dengan Program Kesejahteraan Karyawan', 'Koperasi Karyawan'],
   },
+  {
+    slug: 'tour-travel',
+    name: 'Tour & Travel',
+    tagline: 'Platform Digital untuk Agen & Biro Perjalanan Wisata',
+    category: 'Pariwisata & Perjalanan',
+    color: 'brand',
+    summary:
+      'Platform digital yang membantu agen dan biro perjalanan wisata mengelola paket tur, reservasi, pembayaran, dan itinerary pelanggan dalam satu sistem yang terintegrasi.',
+    description: [
+      'Tour & Travel adalah sistem manajemen perjalanan yang dirancang untuk membantu biro wisata mengelola seluruh proses bisnis, mulai dari katalog paket tur, reservasi pelanggan, hingga penjadwalan keberangkatan, secara digital dan terpusat.',
+      'Dengan Tour & Travel, pelanggan dapat memesan dan membayar paket wisata secara online, sementara tim operasional mendapatkan visibilitas penuh atas jadwal keberangkatan, kapasitas peserta, dan status pembayaran setiap grup.',
+    ],
+    features: [
+      { title: 'Katalog Paket Wisata', desc: 'Kelola daftar paket tur, destinasi, dan harga dalam satu sistem yang mudah diperbarui.' },
+      { title: 'Reservasi & Pembayaran Online', desc: 'Pelanggan dapat memesan dan membayar paket wisata langsung melalui platform.' },
+      { title: 'Manajemen Jadwal Keberangkatan', desc: 'Pantau kapasitas peserta, jadwal keberangkatan, dan status setiap grup perjalanan.' },
+      { title: 'Itinerary Digital', desc: 'Bagikan rencana perjalanan dan dokumen perjalanan kepada peserta secara digital.' },
+    ],
+    benefits: [
+      'Mempercepat proses reservasi dan pembayaran pelanggan',
+      'Mengurangi kesalahan penjadwalan dan kapasitas peserta',
+      'Meningkatkan pengalaman pelanggan dengan itinerary digital',
+      'Memudahkan pelaporan penjualan paket wisata',
+    ],
+    audience: ['Agen Perjalanan Wisata', 'Biro Tur & Travel', 'Operator Wisata Lokal'],
+  },
 ]
 
 export const getProductBySlug = (slug: string) =>

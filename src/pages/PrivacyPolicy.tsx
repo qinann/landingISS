@@ -1,7 +1,7 @@
 const sections = [
   {
     title: '1. Pendahuluan',
-    body: 'Inti Smart Solutions ("kami") menghargai privasi pengguna produk kami (eDesa, ZX, POS, SDS & TDS, dan AKUDANA). Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi yang Anda berikan saat menggunakan layanan kami.',
+    body: 'Inti Smart Solution ("kami") menghargai privasi pengguna produk kami (eDesa, ZX, POS, SDS & TDS, dan AKUDANA). Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi yang Anda berikan saat menggunakan layanan kami.',
   },
   {
     title: '2. Informasi yang Kami Kumpulkan',

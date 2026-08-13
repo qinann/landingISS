@@ -1,11 +1,11 @@
 const sections = [
   {
     title: '1. Penerimaan Ketentuan',
-    body: 'Dengan mengakses atau menggunakan produk Inti Smart Solutions (eDesa, ZX, POS, SDS & TDS, dan AKUDANA), Anda dianggap telah membaca, memahami, dan menyetujui Syarat dan Ketentuan ini beserta Kebijakan Privasi kami.',
+    body: 'Dengan mengakses atau menggunakan produk Inti Smart Solution (eDesa, ZX, POS, SDS & TDS, dan AKUDANA), Anda dianggap telah membaca, memahami, dan menyetujui Syarat dan Ketentuan ini beserta Kebijakan Privasi kami.',
   },
   {
     title: '2. Penggunaan Layanan',
-    body: 'Layanan kami disediakan untuk digunakan oleh instansi, organisasi, atau perorangan yang telah melalui proses kerja sama atau langganan resmi dengan Inti Smart Solutions. Anda setuju untuk menggunakan layanan sesuai tujuan yang sah dan tidak melanggar hukum yang berlaku.',
+    body: 'Layanan kami disediakan untuk digunakan oleh instansi, organisasi, atau perorangan yang telah melalui proses kerja sama atau langganan resmi dengan Inti Smart Solution. Anda setuju untuk menggunakan layanan sesuai tujuan yang sah dan tidak melanggar hukum yang berlaku.',
   },
   {
     title: '3. Akun Pengguna',
@@ -13,7 +13,7 @@ const sections = [
   },
   {
     title: '4. Hak Kekayaan Intelektual',
-    body: 'Seluruh perangkat lunak, tampilan antarmuka, logo, dan materi terkait produk Inti Smart Solutions merupakan hak kekayaan intelektual kami atau pemberi lisensi kami, dan tidak boleh digandakan, dimodifikasi, atau didistribusikan tanpa izin tertulis.',
+    body: 'Seluruh perangkat lunak, tampilan antarmuka, logo, dan materi terkait produk Inti Smart Solution merupakan hak kekayaan intelektual kami atau pemberi lisensi kami, dan tidak boleh digandakan, dimodifikasi, atau didistribusikan tanpa izin tertulis.',
   },
   {
     title: '5. Data dan Kerahasiaan',

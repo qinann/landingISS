@@ -44,7 +44,7 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <span className="h-px w-10 bg-gold-400" />
               <span className="text-xs font-semibold uppercase tracking-widest text-gold-400">
-                Inti Smart Solutions
+                Inti Smart Solution
               </span>
             </div>
             <h1 className="mt-6 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl">
@@ -114,7 +114,7 @@ export default function Home() {
             <div className="mx-auto max-w-2xl text-center">
               <span className="mx-auto block h-px w-12 bg-brand-500" />
               <h2 className="mt-4 text-3xl font-bold text-navy-900">
-                Kenapa Inti Smart Solutions?
+                Kenapa Inti Smart Solution?
               </h2>
               <p className="mt-3 text-slate-600">
                 Kami membangun setiap produk dengan fokus pada kemudahan penggunaan dan
