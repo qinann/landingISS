@@ -42,13 +42,13 @@ export default function Navbar() {
               Produk
             </button>
             {productsOpen && (
-              <div className="absolute left-1/2 top-full w-72 -translate-x-1/2 pt-3">
-                <div className="rounded-xl border border-slate-200 bg-white p-2 shadow-xl shadow-navy-900/10">
+              <div className="absolute left-1/2 top-full w-[34rem] -translate-x-1/2 pt-3">
+                <div className="grid max-h-[70vh] grid-cols-2 gap-1 overflow-y-auto rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl shadow-navy-900/10">
                   {products.map((p) => (
                     <Link
                       key={p.slug}
                       to={`/produk/${p.slug}`}
-                      className="block rounded-lg px-3 py-2.5 text-sm text-navy-700 hover:bg-brand-50 hover:text-brand-700"
+                      className="block rounded-xl px-3 py-2.5 text-sm text-navy-700 hover:bg-brand-50 hover:text-brand-700"
                     >
                       <span className="font-semibold">{p.name}</span>
                       <span className="block text-xs text-slate-500">{p.category}</span>

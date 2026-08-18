@@ -1,9 +1,9 @@
 const testimonials = [
   {
     quote:
-      'Sejak menggunakan eDesa, pelayanan surat-menyurat untuk warga jadi jauh lebih cepat dan pelaporan keuangan desa lebih transparan ke masyarakat.',
-    name: 'Kepala Desa',
-    org: 'Wilayah Jawa Tengah',
+      'eDesa membantu membuat layanan administrasi publik menjadi lebih mudah dan dapat diakses oleh masyarakat kami.',
+    name: 'Rio Resmana',
+    org: 'Sekretaris Desa Haurgeulis, Indramayu',
   },
   {
     quote:

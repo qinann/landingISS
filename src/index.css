@@ -48,6 +48,17 @@ body {
   margin: 0;
   background-color: #f6f8fb;
   color: #1c2433;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(52, 120, 246, 0.38);
+  outline-offset: 3px;
 }
 
 ::selection {

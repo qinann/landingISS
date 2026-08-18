@@ -4,6 +4,11 @@ import zxLogo from '../assets/zx-logo-crop.png'
 import zxVideo from '../assets/zx-video.mp4'
 import sdsTdsLogo from '../assets/sds-tds-logo-crop.png'
 import akudanaLogo from '../assets/akudana-logo.png'
+import posIcon from '../assets/pos-icon.png'
+import travelIcon from '../assets/travel-icon.png'
+import vehicleIcon from '../assets/vehicle-icon.png'
+import cargoIcon from '../assets/cargo-icon.png'
+import virtualHajjIcon from '../assets/virtual-hajj-icon.png'
 
 export type Product = {
   slug: string
@@ -83,6 +88,7 @@ export const products: Product[] = [
     tagline: 'Sistem Kasir Modern untuk Retail & F&B',
     category: 'Point of Sale',
     color: 'accent',
+    logo: posIcon,
     summary:
       'Sistem point of sale yang cepat, andal, dan mudah digunakan untuk mendukung transaksi harian toko, restoran, dan outlet ritel Anda.',
     description: [
@@ -159,29 +165,111 @@ export const products: Product[] = [
   },
   {
     slug: 'tour-travel',
-    name: 'Tour & Travel',
-    tagline: 'Platform Digital untuk Agen & Biro Perjalanan Wisata',
-    category: 'Pariwisata & Perjalanan',
+    name: 'Travel Management',
+    tagline: 'Operasional Umrah, Corporate Travel & Tour Terintegrasi',
+    category: 'Travel Management System',
     color: 'brand',
+    logo: travelIcon,
     summary:
-      'Platform digital yang membantu agen dan biro perjalanan wisata mengelola paket tur, reservasi, pembayaran, dan itinerary pelanggan dalam satu sistem yang terintegrasi.',
+      'Platform terintegrasi yang menghubungkan peserta, agen perjalanan, tour leader, dan keluarga secara real-time dari registrasi hingga kepulangan.',
     description: [
-      'Tour & Travel adalah sistem manajemen perjalanan yang dirancang untuk membantu biro wisata mengelola seluruh proses bisnis, mulai dari katalog paket tur, reservasi pelanggan, hingga penjadwalan keberangkatan, secara digital dan terpusat.',
-      'Dengan Tour & Travel, pelanggan dapat memesan dan membayar paket wisata secara online, sementara tim operasional mendapatkan visibilitas penuh atas jadwal keberangkatan, kapasitas peserta, dan status pembayaran setiap grup.',
+      'Travel Management adalah sistem operasional untuk perjalanan Umrah, corporate travel, dan tour yang menyatukan registrasi, dokumen, pembayaran, paket, agen, dan manifest dalam satu dashboard.',
+      'Fitur keselamatan dan pembelajaran seperti wearable GPS, panic button, notifikasi real-time, dan Virtual Manasik VR 360 membantu penyelenggara memberi pengalaman perjalanan yang lebih aman dan terkoordinasi.',
     ],
     features: [
-      { title: 'Katalog Paket Wisata', desc: 'Kelola daftar paket tur, destinasi, dan harga dalam satu sistem yang mudah diperbarui.' },
-      { title: 'Reservasi & Pembayaran Online', desc: 'Pelanggan dapat memesan dan membayar paket wisata langsung melalui platform.' },
-      { title: 'Manajemen Jadwal Keberangkatan', desc: 'Pantau kapasitas peserta, jadwal keberangkatan, dan status setiap grup perjalanan.' },
-      { title: 'Itinerary Digital', desc: 'Bagikan rencana perjalanan dan dokumen perjalanan kepada peserta secara digital.' },
+      { title: 'Auto Manifest', desc: 'Peserta mengunggah data dan persyaratan secara mandiri untuk membentuk manifest otomatis.' },
+      { title: 'Payment, CRM & Agent', desc: 'Kelola pembayaran, invoice, agen, fee, dan paket perjalanan dari satu basis data.' },
+      { title: 'GPS & Panic Button', desc: 'Wearable GPS membantu melacak peserta di lapangan dengan tombol darurat untuk keselamatan tambahan.' },
+      { title: 'Virtual Manasik VR 360', desc: 'Simulasi interaktif Masjidil Haram dan Masjid Nabawi membantu persiapan sebelum keberangkatan.' },
     ],
     benefits: [
-      'Mempercepat proses reservasi dan pembayaran pelanggan',
-      'Mengurangi kesalahan penjadwalan dan kapasitas peserta',
-      'Meningkatkan pengalaman pelanggan dengan itinerary digital',
-      'Memudahkan pelaporan penjualan paket wisata',
+      'Mempercepat administrasi peserta dan penyusunan manifest',
+      'Meningkatkan keselamatan dan visibilitas peserta di lapangan',
+      'Menyederhanakan koordinasi agen, tour leader, peserta, dan keluarga',
+      'Memberikan pembaruan perjalanan secara real-time',
     ],
-    audience: ['Agen Perjalanan Wisata', 'Biro Tur & Travel', 'Operator Wisata Lokal'],
+    audience: ['Penyelenggara Umrah & Haji', 'Agen Tur & Travel', 'Corporate Travel & Event Organizer'],
+  },
+  {
+    slug: 'vehicle-management',
+    name: 'Vehicle Management',
+    tagline: 'Kendali Armada secara Real-Time',
+    category: 'Fleet & Telematics',
+    color: 'accent',
+    logo: vehicleIcon,
+    summary:
+      'Sistem pemantauan dan pengelolaan armada yang membantu organisasi mengendalikan lokasi, bahan bakar, perawatan, dan keselamatan pengemudi secara terpusat.',
+    description: [
+      'Vehicle Management memberikan visibilitas real-time atas lokasi, kecepatan, status mesin, dan penggunaan kendaraan melalui GPS telematics yang aktif 24/7.',
+      'Analisis konsumsi bahan bakar, pengingat servis otomatis, serta laporan perilaku pengemudi membantu menekan biaya operasional dan mengurangi risiko penyalahgunaan aset.',
+    ],
+    features: [
+      { title: 'Live Telematics', desc: 'Pantau lokasi, kecepatan, rute, dan status mesin kendaraan secara akurat dan real-time.' },
+      { title: 'Fuel Management', desc: 'Analisis konsumsi bahan bakar dan identifikasi pola tidak wajar atau potensi fraud.' },
+      { title: 'Maintenance Reminder', desc: 'Pengingat otomatis untuk servis, penggantian oli, dan perpanjangan dokumen kendaraan.' },
+      { title: 'Driver Analytics', desc: 'Laporan overspeeding, hard braking, dan perilaku berkendara untuk meningkatkan keselamatan.' },
+    ],
+    benefits: [
+      'Meningkatkan utilisasi dan visibilitas seluruh armada',
+      'Menekan pemborosan bahan bakar dan biaya pemeliharaan',
+      'Mencegah penyalahgunaan kendaraan perusahaan',
+      'Meningkatkan keselamatan dan disiplin pengemudi',
+    ],
+    audience: ['Perusahaan Logistik', 'Transportasi & Rental', 'Perusahaan dengan Armada Operasional'],
+  },
+  {
+    slug: 'cargo-management',
+    name: 'Cargo Management',
+    tagline: 'Visibilitas Logistik dari Gudang hingga Tujuan',
+    category: 'Logistics & Cargo',
+    color: 'brand',
+    logo: cargoIcon,
+    summary:
+      'Solusi end-to-end untuk memantau pergerakan kargo, persediaan gudang, dokumen pengiriman, dan biaya logistik melalui darat, laut, maupun udara.',
+    description: [
+      'Cargo Management menyatukan pelacakan kiriman, warehouse, dokumen, tarif, dan konfirmasi penerimaan dalam satu sistem agar setiap pihak melihat status yang sama.',
+      'Dukungan API memungkinkan integrasi dengan marketplace, ERP perusahaan, sistem kepabeanan, dan pihak ketiga lain tanpa proses pencatatan berulang.',
+    ],
+    features: [
+      { title: 'Multi-Modal Tracking', desc: 'Lacak penerimaan, kiriman, dan kontainer lintas moda darat, laut, dan udara.' },
+      { title: 'Digital POD', desc: 'Konfirmasi penerimaan dengan tanda tangan digital, foto lokasi, dan jejak waktu.' },
+      { title: 'Warehouse Sync', desc: 'Sinkronkan stok masuk dan keluar agar proses fulfillment lebih tepat waktu.' },
+      { title: 'Smart Document & Tariff', desc: 'Buat waybill, manifest, barcode, serta kalkulasi tarif berdasarkan berat, volume, dan jarak.' },
+    ],
+    benefits: [
+      'Transparansi status pengiriman dari awal hingga akhir',
+      'Mengurangi dokumen cetak yang hilang atau rusak',
+      'Mempercepat rekonsiliasi biaya dan proses klaim',
+      'Siap terintegrasi dengan sistem bisnis yang sudah digunakan',
+    ],
+    audience: ['Perusahaan Logistik & Freight Forwarder', 'Distributor & Manufaktur', 'Operator Gudang & E-commerce'],
+  },
+  {
+    slug: 'virtual-hajj',
+    name: 'Virtual Hajj Training',
+    tagline: 'Pembelajaran Manasik Interaktif dalam VR 360',
+    category: 'Hajj Education Technology',
+    color: 'accent',
+    logo: virtualHajjIcon,
+    summary:
+      'Aplikasi pembelajaran multi-platform yang membantu calon jamaah memahami rangkaian Haji dan Umrah melalui panduan lengkap, video 360, audio doa, dan simulasi 3D interaktif.',
+    description: [
+      'Virtual Hajj Training menghadirkan pengalaman belajar visual yang mudah digunakan oleh jamaah dari berbagai usia dan tingkat pengalaman digital.',
+      'Materi dapat diakses melalui smartphone, tablet, laptop, dan komputer sehingga proses pembelajaran bisa dilakukan kapan saja dan di mana saja dengan koneksi internet.',
+    ],
+    features: [
+      { title: 'Simulasi Haji 3D 360', desc: 'Pelajari ihram, wukuf, jamarat, tawaf, sa’i, dan tahallul melalui simulasi lokasi interaktif.' },
+      { title: 'Video Makkah & Madinah', desc: 'Konten video 360 memberikan gambaran realistis Masjidil Haram dan Masjid Nabawi.' },
+      { title: 'Panduan & Audio Doa', desc: 'Panduan ibadah dan audio doa tersedia dalam Arab, transliterasi Latin, dan terjemahan.' },
+      { title: 'Akses Multi-Platform', desc: 'Gunakan materi melalui ponsel, tablet, laptop, maupun desktop tanpa perangkat khusus.' },
+    ],
+    benefits: [
+      'Membantu jamaah memahami alur ibadah sebelum keberangkatan',
+      'Pengalaman belajar lebih menarik dan mudah diingat',
+      'Dapat digunakan untuk pelatihan mandiri maupun kelompok',
+      'Mudah diakses oleh jamaah dari berbagai usia',
+    ],
+    audience: ['KBIHU & Penyelenggara Haji/Umrah', 'Calon Jamaah Haji & Umrah', 'Lembaga Pelatihan Manasik'],
   },
 ]
 

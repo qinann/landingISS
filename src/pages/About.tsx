@@ -9,7 +9,7 @@ const values = [
 ]
 
 const timeline = [
-  { year: '2019', text: 'Inti Smart Solution didirikan dengan fokus pada solusi digital untuk sektor pemerintahan desa.' },
+  { year: '2020', text: 'Inti Smart Solution didirikan dengan menggabungkan kompetensi software development, business development, dan marketing communication.' },
   { year: '2021', text: 'Meluncurkan POS dan memperluas fokus ke sektor retail dan F&B.' },
   { year: '2023', text: 'Menghadirkan ZX untuk mendukung digitalisasi pengelolaan zakat, infaq, dan sedekah.' },
   { year: '2025', text: 'Meluncurkan SDS & TDS untuk digitalisasi sekolah serta AKUDANA untuk kesejahteraan karyawan.' },
