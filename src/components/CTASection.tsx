@@ -18,7 +18,7 @@ export default function CTASection({
         <div className="relative mt-9 flex flex-wrap items-center justify-center gap-3">
           <Link
             to="/contact"
-            className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy-900 shadow-sm hover:bg-slate-100"
+            className="cta-shine rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy-900 shadow-sm hover:bg-slate-100"
           >
             Jadwalkan Demo
           </Link>

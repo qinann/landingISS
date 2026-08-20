@@ -67,11 +67,123 @@ a {
 
 .reveal {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(24px) scale(0.985);
+  filter: blur(5px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.7s ease;
 }
 
 .reveal.reveal-visible {
   opacity: 1;
   transform: translateY(0);
+  filter: blur(0);
+}
+
+@keyframes hero-copy-enter {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-dashboard-enter {
+  from { opacity: 0; transform: translateX(34px) scale(0.96); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes dashboard-float {
+  0%, 100% { transform: translateY(0) rotateX(0deg); }
+  50% { transform: translateY(-8px) rotateX(0.4deg); }
+}
+
+@keyframes card-enter {
+  from { opacity: 0; transform: translateY(18px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes chip-enter {
+  from { opacity: 0; transform: translateY(10px) scale(0.94); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes stat-pop {
+  0% { opacity: 0; transform: scale(0.88); }
+  70% { opacity: 1; transform: scale(1.035); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes logo-breathe {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.hero-copy-enter {
+  animation: hero-copy-enter 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-dashboard-enter {
+  animation: hero-dashboard-enter 0.95s 0.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+  perspective: 1000px;
+}
+
+.dashboard-float {
+  animation: dashboard-float 7s 1.2s ease-in-out infinite;
+}
+
+.product-card-enter {
+  animation: card-enter 0.58s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.sector-chip {
+  animation: chip-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.stat-pop {
+  animation: stat-pop 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.partner-logo-tile img {
+  animation: logo-breathe 5s ease-in-out infinite;
+}
+
+.partner-logo-tile:nth-child(2n) img {
+  animation-delay: -2.5s;
+}
+
+.cta-shine {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.cta-shine::after {
+  content: '';
+  position: absolute;
+  inset: -120% auto -120% -45%;
+  width: 32%;
+  transform: rotate(18deg);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.7), transparent);
+  transition: left 0.65s ease;
+  z-index: -1;
+}
+
+.cta-shine:hover::after {
+  left: 120%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal,
+  .hero-copy-enter,
+  .hero-dashboard-enter,
+  .dashboard-float,
+  .product-card-enter,
+  .sector-chip,
+  .stat-pop,
+  .partner-logo-tile img {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
 }

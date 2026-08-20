@@ -5,6 +5,7 @@ import CTASection from '../components/CTASection'
 import SectorStrip from '../components/SectorStrip'
 import Testimonials from '../components/Testimonials'
 import Reveal from '../components/Reveal'
+import PartnersClients from '../components/PartnersClients'
 
 const categories = [
   { id: 'public', label: 'Layanan Publik', slugs: ['edesa', 'zx', 'sds-tds'] },
@@ -50,7 +51,7 @@ export default function Home() {
         <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_15%_15%,rgba(52,120,246,0.24),transparent_35%),radial-gradient(circle_at_85%_75%,rgba(45,212,191,0.13),transparent_30%)]" />
         <div className="absolute inset-0 -z-10 opacity-[0.05] [background-image:linear-gradient(rgba(255,255,255,.7)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.7)_1px,transparent_1px)] [background-size:48px_48px]" />
         <div className="mx-auto grid min-h-[720px] max-w-7xl items-center gap-14 px-4 py-20 sm:px-6 lg:grid-cols-[1.02fr_.98fr] lg:px-8 lg:py-24">
-          <div className="relative z-10">
+          <div className="hero-copy-enter relative z-10">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.05] px-3.5 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-300 backdrop-blur">
               <span className="h-1.5 w-1.5 rounded-full bg-gold-400 shadow-[0_0_14px_rgba(238,194,99,.8)]" />
               Technology that moves real operations
@@ -62,7 +63,7 @@ export default function Home() {
               Kami merancang, membangun, dan mengimplementasikan sistem yang menghubungkan layanan publik, perjalanan, armada, logistik, pendidikan, dan bisnis.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <Link to="/contact" className="rounded-lg bg-white px-6 py-3.5 text-sm font-bold text-navy-950 shadow-xl shadow-black/20 transition hover:-translate-y-0.5 hover:bg-brand-50">Diskusikan kebutuhan</Link>
+              <Link to="/contact" className="cta-shine rounded-lg bg-white px-6 py-3.5 text-sm font-bold text-navy-950 shadow-xl shadow-black/20 transition hover:-translate-y-0.5 hover:bg-brand-50">Diskusikan kebutuhan</Link>
               <a href="#solusi" className="rounded-lg border border-white/15 bg-white/[0.04] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10">Jelajahi ekosistem <span aria-hidden>↓</span></a>
             </div>
             <div className="mt-12 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/10 pt-6 text-xs text-navy-300">
@@ -70,9 +71,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-xl lg:mx-0">
+          <div className="hero-dashboard-enter relative mx-auto w-full max-w-xl lg:mx-0">
             <div className="absolute -inset-10 rounded-full bg-brand-500/10 blur-3xl" />
-            <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-navy-900/80 p-3 shadow-2xl shadow-black/40 backdrop-blur-xl">
+            <div className="dashboard-float relative overflow-hidden rounded-[28px] border border-white/10 bg-navy-900/80 p-3 shadow-2xl shadow-black/40 backdrop-blur-xl">
               <div className="rounded-[20px] border border-white/10 bg-navy-950/80 p-5 sm:p-6">
                 <div className="flex items-center justify-between border-b border-white/10 pb-5">
                   <div><p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-navy-300">ISS Command Center</p><p className="mt-1 text-sm font-semibold text-white">Operational overview</p></div>
@@ -108,7 +109,7 @@ export default function Home() {
         </div>
         <div id="produk" className="mt-8 grid gap-4 md:grid-cols-2">
           {visibleProducts.map((product, index) => (
-            <Link key={product.slug} to={`/produk/${product.slug}`} className={`group relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br ${productThemes[product.slug].wash} p-6 transition duration-300 hover:-translate-y-1 hover:border-white hover:shadow-2xl hover:shadow-navy-900/[0.10] sm:p-7 ${index === 0 && visibleProducts.length % 2 !== 0 ? 'md:col-span-2' : ''}`}>
+            <Link key={`${activeCategory}-${product.slug}`} to={`/produk/${product.slug}`} style={{ animationDelay: `${index * 75}ms` }} className={`product-card-enter group relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br ${productThemes[product.slug].wash} p-6 transition duration-300 hover:-translate-y-1 hover:border-white hover:shadow-2xl hover:shadow-navy-900/[0.10] sm:p-7 ${index === 0 && visibleProducts.length % 2 !== 0 ? 'md:col-span-2' : ''}`}>
               <div className={`absolute -right-16 -top-16 h-52 w-52 rounded-full blur-2xl transition duration-500 group-hover:scale-125 ${productThemes[product.slug].glow}`} />
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent" />
               <div className="relative grid gap-6 sm:grid-cols-[1fr_150px] sm:items-center">
@@ -127,6 +128,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <PartnersClients />
 
       <section className="relative overflow-hidden bg-navy-950 py-20 text-white sm:py-28">
         <div className="absolute inset-0 opacity-[0.05] [background-image:linear-gradient(rgba(255,255,255,.7)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.7)_1px,transparent_1px)] [background-size:48px_48px]" />

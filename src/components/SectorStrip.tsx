@@ -26,8 +26,8 @@ export default function SectorStrip() {
           </div>
 
           <div className="flex gap-2.5 overflow-x-auto pb-2 lg:flex-wrap lg:justify-end lg:overflow-visible lg:pb-0">
-            {sectors.map((sector) => (
-              <span key={sector.label} className="inline-flex shrink-0 items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-semibold text-navy-800 transition hover:border-brand-200 hover:bg-brand-50">
+            {sectors.map((sector, index) => (
+              <span key={sector.label} style={{ animationDelay: `${index * 60}ms` }} className="sector-chip inline-flex shrink-0 items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-semibold text-navy-800 transition hover:border-brand-200 hover:bg-brand-50">
                 <span className={`grid h-6 w-6 place-items-center rounded-full text-[8px] font-extrabold ${sector.tone}`}>{sector.short}</span>
                 {sector.label}
               </span>
@@ -38,8 +38,8 @@ export default function SectorStrip() {
         <div className="relative overflow-hidden bg-navy-950">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_0%,rgba(52,120,246,.28),transparent_30%),radial-gradient(circle_at_90%_100%,rgba(45,212,191,.16),transparent_28%)]" />
           <div className="relative grid grid-cols-2 divide-x divide-y divide-white/10 sm:grid-cols-4 sm:divide-y-0">
-            {proofPoints.map((item) => (
-              <div key={item.label} className="group px-5 py-6 text-center sm:py-7">
+            {proofPoints.map((item, index) => (
+              <div key={item.label} style={{ animationDelay: `${250 + index * 80}ms` }} className="stat-pop group px-5 py-6 text-center sm:py-7">
                 <div className="text-3xl font-extrabold tracking-tight text-white transition group-hover:text-brand-300">{item.value}</div>
                 <div className="mt-1.5 text-[11px] font-medium uppercase tracking-[0.12em] text-navy-300">{item.label}</div>
               </div>
