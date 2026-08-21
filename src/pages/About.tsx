@@ -1,5 +1,6 @@
 import CTASection from '../components/CTASection'
 import Reveal from '../components/Reveal'
+import companyProfile from '../assets/Compro ISS.pdf'
 
 const values = [
   { title: 'Inovasi', desc: 'Terus mengembangkan solusi yang relevan dengan kebutuhan pengguna yang berubah.' },
@@ -46,6 +47,44 @@ export default function About() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+          <Reveal>
+            <div className="overflow-hidden rounded-2xl bg-navy-950 px-6 py-10 sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-12">
+              <div className="max-w-2xl">
+                <span className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">
+                  Company Profile
+                </span>
+                <h2 className="mt-3 text-3xl font-bold text-white">
+                  Kenali Inti Smart Solution Lebih Dekat
+                </h2>
+                <p className="mt-4 leading-relaxed text-navy-200">
+                  Pelajari profil perusahaan, layanan, solusi digital, dan pengalaman kami
+                  melalui company profile resmi Inti Smart Solution.
+                </p>
+              </div>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:mt-0 lg:shrink-0">
+                <a
+                  href={companyProfile}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center rounded-lg bg-brand-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-brand-500"
+                >
+                  Lihat Company Profile
+                </a>
+                <a
+                  href={companyProfile}
+                  download="Company Profile Inti Smart Solution.pdf"
+                  className="inline-flex items-center justify-center rounded-lg border border-white/30 px-6 py-3 font-semibold text-white transition-colors hover:bg-white/10"
+                >
+                  Unduh PDF
+                </a>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
